@@ -1,7 +1,10 @@
 name: release
 on:
-  push:
-    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release tag (for example v1.0.0)'
+        required: true
 permissions:
   contents: write
 jobs:
@@ -16,4 +19,4 @@ jobs:
       - name: Create release
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release create "$GITHUB_REF_NAME" setup.exe --title "$GITHUB_REF_NAME" --notes "Windows installer for Frenchfries777 web apps. Rename to <app-id>-setup.exe (for example stickseum-setup.exe) before running. See README."
+        run: gh release create "${{ inputs.tag }}" setup.exe --target "$GITHUB_SHA" --title "${{ inputs.tag }}" --notes "Windows installer for Frenchfries777 web apps. Rename to <app-id>-setup.exe (for example stickseum-setup.exe) before running. See README."
