@@ -6,6 +6,13 @@ Start menu and on the Desktop, and opens it in its own window (Microsoft Edge or
 This repository contains only the installer. The apps themselves (games, lessons, tools, logos) are **not** part
 of this project and are not covered by its license; they are available at https://frenchfries777.com.
 
+## Download
+
+Get `setup.exe` from the [Releases page](https://github.com/frenchfries777mc/ff-installer/releases), rename it to
+`<app-id>-setup.exe` (for example `stickseum-setup.exe`) and run it. This project uses free code signing provided by [SignPath.io](https://signpath.io), certificate by SignPath Foundation
+(signing is being set up; v1.0.0 is not signed yet). See "Code signing policy" below.
+The normal way to get it is the install page of each app on https://frenchfries777.com.
+
 ## What it does
 
 The file is named `<app-id>-setup.exe` (for example `stickseum-setup.exe`). When you run it:
