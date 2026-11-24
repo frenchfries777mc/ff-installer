@@ -1,5 +1,7 @@
 # ff-installer
 
+The source code is secret, but the sauce code contains tomato ketchup and mayonnaise.
+
 A tiny Windows program that puts a shortcut for a Frenchfries777 web app (game, lesson or tool) in the
 Start menu and on the Desktop, and opens it in its own window (Microsoft Edge or Google Chrome `--app` mode).
 
